@@ -1,0 +1,288 @@
+{
+  "fr": {
+    "meta": {
+      "title": "DexLab · Sites web et systèmes sur mesure à M'Sila",
+      "description": "DexLab conçoit des sites, des pages de commande, des panneaux d'administration et des outils de gestion sur mesure, dont un logiciel de gestion pour les cabinets médicaux de M'Sila."
+    },
+    "skip": "Aller au contenu",
+    "navLabel": "Navigation principale",
+    "langLabel": "Langue",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "cta": "Démarrer un projet",
+    "nav": ["Sites web", "Automatisation", "Logiciel cabinet", "Réalisations", "Contact"],
+    "hero": {
+      "tag": "CABINETS",
+      "chip": "Logiciel de gestion pour médecins à M'Sila",
+      "h1": "Des sites et des systèmes taillés pour votre activité.",
+      "sub": "DexLab conçoit et développe des sites, des pages de commande, des panneaux d'administration et des outils de gestion sur mesure, depuis M'Sila, pour les entreprises qui veulent moins de papier et plus de clarté.",
+      "cta2": "Voir les réalisations",
+      "replay": "Assembler à nouveau"
+    },
+    "m": { "web": "Sites web", "sys": "Systèmes", "order": "Page de commande", "admin": "Panneau d'admin", "clinic": "Logiciel cabinet", "flow": "Flux de travail" },
+    "web": {
+      "label": "01 · Développement web",
+      "h2": "Des sites qui expliquent, vendent et prennent les commandes.",
+      "intro": "De la simple vitrine au panneau d'administration complet, chaque site est pensé d'abord pour le téléphone de vos clients, dans leurs langues.",
+      "cards": [
+        ["Sites vitrines", "Présentez votre activité, vos services et vos coordonnées clairement.", "web"],
+        ["Pages d'atterrissage", "Une offre, une page, une action, pour une campagne ou un lancement.", "landing"],
+        ["Pages de commande", "Vos clients choisissent et envoient leur commande sans passer d'appel.", "order"],
+        ["Panneaux d'administration", "Gérez commandes, contenus et clients depuis un espace privé.", "admin"]
+      ]
+    },
+    "auto": {
+      "label": "02 · Systèmes d'automatisation",
+      "h2": "Moins de recopie, moins d'oublis.",
+      "intro": "Nous observons comment votre travail circule aujourd'hui, puis nous construisons un outil qui le réunit au même endroit.",
+      "before": "Avant",
+      "after": "Après",
+      "beforeItems": [
+        ["Commandes prises au téléphone et notées dans un carnet", "phone"],
+        ["Les mêmes informations recopiées dans un tableur", "sheet"],
+        ["Les relances dépendent de la mémoire", "memo"]
+      ],
+      "afterItems": ["Chaque demande saisie une seule fois, au même endroit", "Toute l'équipe voit l'état de chaque demande", "Une liste quotidienne indique ce qu'il faut relancer"],
+      "s1": "Nouveau", "s2": "En cours", "s3": "Terminé"
+    },
+    "clinic": {
+      "label": "03 · Produit phare",
+      "h2": "Un logiciel de gestion pour les médecins et cliniques privés de M'Sila.",
+      "intro": "Patients, rendez-vous, consultations, ordonnances et facturation dans une seule application web, avec le logo de votre cabinet sur les documents imprimés.",
+      "mods": [
+        ["Patients", "Dossier et historique des visites au même endroit.", "person"],
+        ["Rendez-vous", "Agenda du jour pour le médecin et l'accueil.", "cal"],
+        ["Consultations", "Notes de chaque visite, liées au patient.", "notes"],
+        ["Ordonnances", "Préparées et imprimées avec votre en-tête.", "rx"],
+        ["Facturation", "Honoraires enregistrés, reçus imprimés.", "bill"]
+      ],
+      "cta": "Demander une démonstration",
+      "figLabel": "Écran illustratif de l'application",
+      "tryIt": "Touchez un statut pour le faire avancer.",
+      "note": "Écran illustratif. Dans l'application, le logo et les couleurs du cabinet remplacent ceux de DexLab."
+    },
+    "work": {
+      "label": "04 · Réalisations",
+      "h2": "Projets récents",
+      "note": "Des projets construits pour des commerces et des marques en Algérie.",
+      "cards": [
+        ["Skee Block", "Site web · Réservation · Admin", "Site d'un salon de barbier avec réservation en ligne et un espace privé pour le propriétaire."],
+        ["Nexora", "Page de commande", "Page produit et formulaire de commande pour une boutique en ligne."],
+        ["HEALERS", "Site vitrine · Offres", "Site et offres pour une marque de bien-être, autour d'une huile de magnésium."]
+      ]
+    },
+    "contact": {
+      "label": "05 · Contact",
+      "h2": "Parlons de votre projet.",
+      "intro": "Décrivez votre besoin en quelques lignes. Vous recevrez une réponse avec les prochaines étapes.",
+      "emailK": "E-mail",
+      "name": "Votre nom",
+      "reach": "E-mail ou téléphone",
+      "type": "Type de projet",
+      "chips": ["Site web", "Automatisation", "Logiciel cabinet", "Je ne sais pas encore"],
+      "msg": "De quoi avez-vous besoin ?",
+      "send": "Envoyer le message",
+      "required": "Indiquez votre nom et votre besoin.",
+      "ok": "Votre application e-mail s'ouvre avec le message prêt. Il ne reste qu'à l'envoyer.",
+      "subject": "Nouveau projet"
+    },
+    "foot": { "tag": "Sites et systèmes sur mesure, depuis M'Sila, Algérie.", "top": "Haut de page" }
+  },
+  "en": {
+    "meta": {
+      "title": "DexLab · Websites and custom systems in M'Sila",
+      "description": "DexLab designs and builds websites, order pages, admin panels and custom management tools, including a management system for private clinics in M'Sila."
+    },
+    "skip": "Skip to content",
+    "navLabel": "Main navigation",
+    "langLabel": "Language",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "cta": "Start a project",
+    "nav": ["Web", "Automation", "Clinic system", "Work", "Contact"],
+    "hero": {
+      "tag": "CLINICS",
+      "chip": "Management system for doctors in M'Sila",
+      "h1": "Websites and systems, built to fit your business.",
+      "sub": "DexLab designs and builds websites, order pages, admin panels and custom management tools, from M'Sila, for businesses that want less paperwork and more clarity.",
+      "cta2": "See the work",
+      "replay": "Assemble again"
+    },
+    "m": { "web": "Websites", "sys": "Systems", "order": "Order page", "admin": "Admin panel", "clinic": "Clinic system", "flow": "Workflow" },
+    "web": {
+      "label": "01 · Web development",
+      "h2": "Websites that explain, sell and take orders.",
+      "intro": "From a one-page presence to a full admin panel, each site is built for your customers' phones first, in the languages they read.",
+      "cards": [
+        ["Websites", "Present your business, services and contact details clearly.", "web"],
+        ["Landing pages", "One offer, one page, one action, for a campaign or a launch.", "landing"],
+        ["Order pages", "Customers choose products and send an order without a phone call.", "order"],
+        ["Admin panels", "Manage orders, content and customers from one private dashboard.", "admin"]
+      ]
+    },
+    "auto": {
+      "label": "02 · Automation systems",
+      "h2": "Less copying, fewer forgotten tasks.",
+      "intro": "We map how your work moves today, then build a tool that keeps it in one place.",
+      "before": "Before",
+      "after": "After",
+      "beforeItems": [
+        ["Orders taken by phone and written in a notebook", "phone"],
+        ["The same details copied again into a spreadsheet", "sheet"],
+        ["Follow-ups depend on memory", "memo"]
+      ],
+      "afterItems": ["Each request entered once, in one place", "Everyone sees the status of each request", "A daily list shows what needs follow-up"],
+      "s1": "New", "s2": "In progress", "s3": "Done"
+    },
+    "clinic": {
+      "label": "03 · Flagship product",
+      "h2": "A management system for private doctors and clinics in M'Sila.",
+      "intro": "Patients, appointments, consultations, prescriptions and billing in one web application, with your clinic's own logo on printed documents.",
+      "mods": [
+        ["Patients", "Records and visit history in one file.", "person"],
+        ["Appointments", "Daily agenda for the doctor and the front desk.", "cal"],
+        ["Consultations", "Notes from each visit, linked to the patient.", "notes"],
+        ["Prescriptions", "Prepared and printed with your letterhead.", "rx"],
+        ["Billing", "Fees recorded and receipts printed.", "bill"]
+      ],
+      "cta": "Request a demo",
+      "figLabel": "Illustrative application screen",
+      "tryIt": "Tap a status to move it forward.",
+      "note": "Illustrative screen. Inside the app, the clinic's own logo and colours replace DexLab's."
+    },
+    "work": {
+      "label": "04 · Selected work",
+      "h2": "Recent projects",
+      "note": "Projects built for shops and brands in Algeria.",
+      "cards": [
+        ["Skee Block", "Website · Booking · Admin", "A barbershop website with online booking and a private area for the owner."],
+        ["Nexora", "Order page", "Product page and order form for an online shop."],
+        ["HEALERS", "Website · Offers", "Website and offers for a wellness brand built around a magnesium oil."]
+      ]
+    },
+    "contact": {
+      "label": "05 · Contact",
+      "h2": "Let's talk about your project.",
+      "intro": "Describe what you need in a few lines. You'll get a reply with the next steps.",
+      "emailK": "Email",
+      "name": "Your name",
+      "reach": "Email or phone",
+      "type": "Project type",
+      "chips": ["Website", "Automation", "Clinic system", "Not sure yet"],
+      "msg": "What do you need?",
+      "send": "Send message",
+      "required": "Please add your name and what you need.",
+      "ok": "Your email app is opening with the message ready. Just press send.",
+      "subject": "New project"
+    },
+    "foot": { "tag": "Websites and custom systems from M'Sila, Algeria.", "top": "Back to top" }
+  },
+  "ar": {
+    "meta": {
+      "title": "DexLab · مواقع وأنظمة مخصّصة في المسيلة",
+      "description": "يصمّم DexLab ويطوّر المواقع وصفحات الطلبات ولوحات التحكم وأدوات التسيير المخصّصة، ومنها نظام تسيير للعيادات الخاصة في المسيلة."
+    },
+    "skip": "انتقل إلى المحتوى",
+    "navLabel": "القائمة الرئيسية",
+    "langLabel": "اللغة",
+    "menuOpen": "فتح القائمة",
+    "menuClose": "إغلاق القائمة",
+    "cta": "ابدأ مشروعك",
+    "nav": ["تطوير المواقع", "الأتمتة", "نظام العيادات", "الأعمال", "تواصل"],
+    "hero": {
+      "tag": "عيادات",
+      "chip": "نظام تسيير العيادات لأطباء المسيلة",
+      "h1": "مواقع وأنظمة مبنية على مقاس عملك.",
+      "sub": "يصمّم DexLab ويطوّر المواقع وصفحات الطلبات ولوحات التحكم وأدوات التسيير المخصّصة، من المسيلة، لأصحاب الأعمال الذين يريدون ورقًا أقل ووضوحًا أكثر.",
+      "cta2": "شاهد الأعمال",
+      "replay": "أعِد التركيب"
+    },
+    "m": { "web": "مواقع", "sys": "أنظمة", "order": "صفحة طلبات", "admin": "لوحة تحكم", "clinic": "نظام العيادات", "flow": "مسار عمل" },
+    "web": {
+      "label": "01 · تطوير المواقع",
+      "h2": "مواقع تشرح وتبيع وتستقبل الطلبات.",
+      "intro": "من صفحة تعريفية بسيطة إلى لوحة تحكم كاملة، كل موقع مصمّم أولًا لهاتف زبائنك وبلغتهم.",
+      "cards": [
+        ["مواقع تعريفية", "قدّم نشاطك وخدماتك ووسائل التواصل بوضوح.", "web"],
+        ["صفحات هبوط", "عرض واحد، صفحة واحدة، إجراء واحد، لحملة أو إطلاق.", "landing"],
+        ["صفحات الطلبات", "يختار زبائنك المنتجات ويرسلون الطلب دون مكالمة.", "order"],
+        ["لوحات التحكم", "أدِر الطلبات والمحتوى والزبائن من لوحة خاصة واحدة.", "admin"]
+      ]
+    },
+    "auto": {
+      "label": "02 · أنظمة الأتمتة",
+      "h2": "نسخ أقل، ومهام منسية أقل.",
+      "intro": "ندرس كيف يسير عملك اليوم، ثم نبني أداة تجمعه في مكان واحد.",
+      "before": "قبل",
+      "after": "بعد",
+      "beforeItems": [
+        ["الطلبات تُؤخذ بالهاتف وتُكتب في دفتر", "phone"],
+        ["نفس المعلومات تُنسخ من جديد في جدول", "sheet"],
+        ["المتابعة تعتمد على الذاكرة", "memo"]
+      ],
+      "afterItems": ["كل طلب يُسجَّل مرة واحدة في مكان واحد", "الجميع يرى حالة كل طلب", "قائمة يومية تبيّن ما يحتاج متابعة"],
+      "s1": "جديد", "s2": "قيد التنفيذ", "s3": "مُنجز"
+    },
+    "clinic": {
+      "label": "03 · المنتج الرئيسي",
+      "h2": "نظام تسيير للأطباء والعيادات الخاصة في المسيلة.",
+      "intro": "المرضى والمواعيد والفحوصات والوصفات والفوترة في تطبيق ويب واحد، مع شعار عيادتك على الوثائق المطبوعة.",
+      "mods": [
+        ["المرضى", "الملف وسجل الزيارات في مكان واحد.", "person"],
+        ["المواعيد", "جدول اليوم للطبيب والاستقبال.", "cal"],
+        ["الفحوصات", "ملاحظات كل زيارة مرتبطة بالمريض.", "notes"],
+        ["الوصفات", "تُحضَّر وتُطبع بترويسة عيادتك.", "rx"],
+        ["الفوترة", "تسجيل الأتعاب وطباعة الوصولات.", "bill"]
+      ],
+      "cta": "اطلب عرضًا تجريبيًا",
+      "figLabel": "شاشة توضيحية للتطبيق",
+      "tryIt": "اضغط على الحالة لتقدّمها.",
+      "note": "شاشة توضيحية. داخل التطبيق يظهر شعار العيادة وألوانها بدل ألوان DexLab. واجهة التطبيق بالفرنسية والإنجليزية، لذلك تظهر الشاشة بالفرنسية."
+    },
+    "work": {
+      "label": "04 · أعمال مختارة",
+      "h2": "مشاريع حديثة",
+      "note": "مشاريع بُنيت لمحلات وعلامات تجارية في الجزائر.",
+      "cards": [
+        ["Skee Block", "موقع · حجز · لوحة تحكم", "موقع صالون حلاقة مع حجز عبر الإنترنت ومساحة خاصة لصاحب المحل."],
+        ["Nexora", "صفحة طلبات", "صفحة منتج واستمارة طلب لمتجر إلكتروني."],
+        ["HEALERS", "موقع تعريفي · عروض", "موقع وعروض لعلامة عناية وصحة حول زيت المغنيسيوم."]
+      ]
+    },
+    "contact": {
+      "label": "05 · تواصل",
+      "h2": "لنتحدث عن مشروعك.",
+      "intro": "صِف حاجتك في بضعة أسطر، وستتلقى ردًا بالخطوات التالية.",
+      "emailK": "البريد الإلكتروني",
+      "name": "الاسم",
+      "reach": "البريد أو الهاتف",
+      "type": "نوع المشروع",
+      "chips": ["موقع", "أتمتة", "نظام العيادات", "لست متأكدًا بعد"],
+      "msg": "ما الذي تحتاجه؟",
+      "send": "أرسل الرسالة",
+      "required": "يرجى كتابة الاسم وما تحتاجه.",
+      "ok": "يُفتح تطبيق البريد والرسالة جاهزة. ما عليك إلا الضغط على إرسال.",
+      "subject": "مشروع جديد"
+    },
+    "foot": { "tag": "مواقع وأنظمة مخصّصة من المسيلة، الجزائر.", "top": "العودة للأعلى" }
+  },
+  "app": {
+    "clinicName": "Cabinet [Nom du cabinet]",
+    "doctor": "Dr [Nom]",
+    "side": ["Agenda", "Patients", "Consultations", "Ordonnances", "Facturation"],
+    "side_en": ["Agenda", "Patients", "Consultations", "Prescriptions", "Billing"],
+    "title": "Agenda du jour", "title_en": "Today's agenda",
+    "newBtn": "+ Rendez-vous", "newBtn_en": "+ Appointment",
+    "cols": ["Heure", "Patient", "Motif", "Statut"], "cols_en": ["Time", "Patient", "Reason", "Status"],
+    "rows": [["09:00", "[Patient A]", "Consultation", "Consultation"], ["09:30", "[Patient B]", "Contrôle", "Follow-up"], ["10:15", "[Patient C]", "Première visite", "First visit"], ["11:00", "[Patient D]", "Consultation", "Consultation"]],
+    "status": ["Prévu", "Arrivé", "En consultation", "Terminé"],
+    "status_en": ["Scheduled", "Arrived", "In consultation", "Done"],
+    "start": [1, 0, 0, 0],
+    "tabs": ["Dossier", "Ordonnance", "Reçu"], "tabs_en": ["Record", "Prescription", "Receipt"]
+  },
+  "site": {
+    "email": "dex@dexlab.store",
+    "url": "https://dexlab.store",
+    "whatsapp": ""
+  }
+}
