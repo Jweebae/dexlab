@@ -5,6 +5,7 @@ Edit text in content/strings.json, then run:  python3 tools/build.py
 Styles live in assets/css/site.css, behaviour in assets/js/site.js.
 """
 import html
+import hashlib
 import json
 import os
 
@@ -14,6 +15,13 @@ SITE = S["site"]
 LANGS = [("ar", "العربية", "عربي", "rtl"), ("fr", "Français", "FR", "ltr"), ("en", "English", "EN", "ltr")]
 IDS = ["web", "automation", "clinic", "work", "contact"]
 e = html.escape
+
+
+def asset_url(path):
+    """New content gets a new URL, avoiding stale CSS/JS after a Pages deploy."""
+    with open(os.path.join(ROOT, path.lstrip('/')), 'rb') as asset:
+        version = hashlib.sha256(asset.read()).hexdigest()[:12]
+    return f'{path}?v={version}'
 
 ICON = {
     "web": "M3 4h18v16H3zM3 9h18", "order": "M5 4h14v16H5zM8.5 9l1.5 1.5L13 7.5M8.5 15h7",
@@ -99,10 +107,12 @@ def page(lang):
         for r, s in zip(app["rows"], app["start"]))
     tabs = "".join(f'<div class="tab"><span>{e(k)}</span><i class="bar" style="width:{w}"></i><i class="bar2"></i></div>'
                    for k, w in zip(app["tabs" + sfx], ["70%", "55%", "40%"]))
-    arts = ["", " v2", " v3"]
     projects = "".join(
-        f'<article class="project rv" style="--i:{n}"><div class="p-art{arts[n]}" aria-hidden="true"><div class="frame"><b>{e(p[0])}</b></div></div>'
-        f'<div class="p-body"><div class="tags"><span>{e(p[1])}</span></div><h3 lang="en" dir="ltr">{e(p[0])}</h3><p>{e(p[2])}</p></div></article>'
+        f'<a class="project project-link rv" href="{e(p[3])}" target="_blank" rel="noopener noreferrer" style="--i:{n}" '
+        f'aria-label="{e(p[0])} — {e(t["work"]["visit"])} ({e(t["social"]["newTab"])})">'
+        f'<div class="project-cover"><img src="{asset_url(p[4])}" alt="{e(p[5])}" width="1600" height="1000" loading="lazy" decoding="async"></div>'
+        f'<div class="p-body"><div class="tags"><span>{e(p[1])}</span></div><h3 lang="en" dir="ltr">{e(p[0])}</h3><p>{e(p[2])}</p>'
+        f'<span class="project-visit"><bdi dir="ltr" class="ltr">{e(p[3].split("//")[-1].rstrip("/"))}</bdi><span>{e(t["work"]["visit"])} ↗</span></span></div></a>'
         for n, p in enumerate(t["work"]["cards"]))
     chips = "".join(
         f'<label><input type="radio" name="type" value="{v}"{" checked" if v == "clinic" else ""}><span>{e(c)}</span></label>'
@@ -133,7 +143,7 @@ def page(lang):
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/{"ibm-plex-sans-arabic-arabic-700-normal" if lang == "ar" else "instrument-sans-latin-700-normal"}.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="{asset_url('/assets/css/site.css')}">
 <script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("play");</script>
 </head>
 <body>
@@ -298,7 +308,7 @@ def page(lang):
 </div>
 <div class="wrap foot-bottom"><span dir="ltr" class="ltr">© <span data-year>2026</span> DexLab · M’Sila</span><a href="#top">{e(t["foot"]["top"])} ↑</a></div>
 </footer>
-<script src="/assets/js/site.js" defer></script>
+<script src="{asset_url('/assets/js/site.js')}" defer></script>
 </body>
 </html>
 """
@@ -359,7 +369,7 @@ def main():
         with open(os.path.join(ROOT, lang, "index.html"), "w", encoding="utf-8") as f:
             f.write(page(lang))
     open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(ROOT_INDEX)
-    open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8").write(NOT_FOUND)
+    open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8").write(NOT_FOUND.replace('/assets/css/site.css', asset_url('/assets/css/site.css')))
     json.dump(MANIFEST, open(os.path.join(ROOT, "site.webmanifest"), "w"), indent=2)
     urls = "".join(f"<url><loc>{SITE['url']}/{c}/</loc></url>" for c in ("fr", "ar", "en"))
     open(os.path.join(ROOT, "sitemap.xml"), "w").write(

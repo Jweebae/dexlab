@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<rect width="1600" height="1000" fill="#eaf2ee"/>
+<path d="M920 0v1000M1120 0v1000M1320 0v1000M1520 0v1000M800 200h800M800 400h800M800 600h800M800 800h800" stroke="#d5e4dc" stroke-width="2"/>
+<rect x="88" y="100" width="112" height="5" fill="#23765b"/>
+<text x="88" y="158" font-family="Arial,sans-serif" font-size="25" fill="#406253" letter-spacing="5">EDUCATION / ALGERIA</text>
+<text x="82" y="342" font-family="Arial,sans-serif" font-size="112" font-weight="700" letter-spacing="-5" fill="#153f32">eLearning</text>
+<text x="88" y="470" font-family="Arial,sans-serif" font-size="112" font-weight="700" fill="#23765b">DZ<tspan fill="#daa94a">.</tspan></text>
+<text x="88" y="574" font-family="Arial,sans-serif" font-size="34" fill="#406253">Find. Learn. Move forward.</text>
+<rect x="88" y="640" width="580" height="88" rx="0" fill="#fff" stroke="#b5cfc1" stroke-width="2"/>
+<circle cx="132" cy="680" r="14" fill="none" stroke="#23765b" stroke-width="4"/><path d="m143 691 12 12" stroke="#23765b" stroke-width="4"/>
+<text x="178" y="695" font-family="Arial,sans-serif" font-size="27" fill="#406253">Exams. Resources. Possibilities.</text>
+<text x="88" y="870" font-family="Arial,sans-serif" font-size="29" fill="#153f32">elearningdz.com</text>
+<g transform="translate(860 235) rotate(-8 280 300)">
+<rect x="40" y="80" width="450" height="560" fill="#c5dacf"/>
+<rect x="16" y="48" width="450" height="560" fill="#daa94a"/>
+<rect width="450" height="560" fill="#fffdf5" stroke="#a9c6b7" stroke-width="2"/>
+<rect width="32" height="560" fill="#23765b"/>
+<path d="M92 100h276M92 133h180" stroke="#153f32" stroke-width="12"/>
+<path d="M92 205h276M92 245h240M92 285h260M92 325h210" stroke="#cadbd1" stroke-width="9"/>
+<path d="m104 411 24 24 48-55" fill="none" stroke="#23765b" stroke-width="10"/>
+<path d="M210 405h150M210 435h110" stroke="#cadbd1" stroke-width="9"/>
+<rect x="285" y="485" width="130" height="38" fill="#e2eee7"/>
+</g>
+<g transform="translate(1180 735)"><rect width="215" height="105" fill="#153f32"/><path d="M42 30h57c13 0 19 8 19 18v37c0-10-8-16-20-16H42zM118 48c0-10 6-18 19-18h36v39h-36c-12 0-19 6-19 16" stroke="#fffdf5" stroke-width="5" fill="none"/></g>
+</svg>

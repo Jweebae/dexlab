@@ -267,6 +267,15 @@ figcaption .try{display:block;color:var(--cobalt-deep);font-weight:600;margin-bo
 .work-head > div{display:flex;flex-direction:column;gap:14px}
 .work-head .side-note{font-size:14px;color:var(--graphite);max-width:420px;line-height:1.5}
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:20px}
+.project-link{color:var(--ink);text-decoration:none;min-width:0}
+.project-link:hover{color:var(--ink)}
+.project-cover{aspect-ratio:8/5;overflow:hidden;background:var(--module)}
+.project-cover img{width:100%;height:100%;object-fit:cover;transition:transform var(--slow) var(--out)}
+.project-link:hover .project-cover img{transform:scale(1.025)}
+.project-link .p-body{padding:28px;flex:1}
+.project-link .p-body p{max-width:58ch}
+.project-visit{margin-block-start:auto;padding-block-start:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;color:var(--cobalt);font-size:14px;font-weight:600}
+.project-visit>bdi{color:var(--graphite);font-size:13px}
 .project{background:var(--sheet);box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;transition:transform var(--fast) var(--out),box-shadow var(--fast) var(--out)}
 .project:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1.5px var(--ink),var(--lift)}
 .js .project.rv.in:hover{transform:translateY(-2px)}
@@ -417,5 +426,6 @@ section[id]{scroll-margin-block-start:calc(var(--nav-h) + 16px)}
   .note{transform:none!important}
   .btn:hover,.card:hover,.project:hover,.mods li:hover{transform:none}
   .social-card:hover,.js .starter-card.rv.in:hover{transform:none}
+  .project-link:hover .project-cover img{transform:none}
 }
 [hidden]{display:none!important}

@@ -13,9 +13,9 @@
     "nav": ["Sites web", "Automatisation", "Logiciel cabinet", "Réalisations", "Contact"],
     "hero": {
       "tag": "CABINETS",
-      "chip": "Logiciel de gestion pour médecins à M'Sila",
+      "chip": "Logiciel de gestion pour médecins",
       "h1": "Des sites et des systèmes taillés pour votre activité.",
-      "sub": "DexLab conçoit et développe des sites, des pages de commande, des panneaux d'administration et des outils de gestion sur mesure, depuis M'Sila, pour les entreprises qui veulent moins de papier et plus de clarté.",
+      "sub": "DexLab conçoit et développe des sites, des pages de commande, des panneaux d'administration et des outils de gestion sur mesure, pour les entreprises qui veulent moins de papier et plus de clarté.",
       "cta2": "Voir les réalisations",
       "replay": "Assembler à nouveau"
     },
@@ -64,12 +64,26 @@
     "work": {
       "label": "04 · Réalisations",
       "h2": "Projets récents",
-      "note": "Des projets construits pour des commerces et des marques en Algérie.",
+      "note": "Deux projets, deux univers. Découvrez les sites en ligne.",
       "cards": [
-        ["Skee Block", "Site web · Réservation · Admin", "Site d'un salon de barbier avec réservation en ligne et un espace privé pour le propriétaire."],
-        ["Nexora", "Page de commande", "Page produit et formulaire de commande pour une boutique en ligne."],
-        ["HEALERS", "Site vitrine · Offres", "Site et offres pour une marque de bien-être, autour d'une huile de magnésium."]
-      ]
+        [
+          "3kee.site",
+          "Barbier · Site web · Réservation",
+          "Un site de barbier au caractère affirmé, avec réservation en ligne et espace de gestion privé.",
+          "https://3kee.site/",
+          "/assets/img/projects/3kee-cover.svg",
+          "Visuel du projet 3kee avec le portrait original du barbier"
+        ],
+        [
+          "eLearning DZ",
+          "Éducation · Recherche · Outils étudiants",
+          "Une plateforme de ressources scolaires en Algérie : recherche d’examens, calcul de moyennes et orientation universitaire.",
+          "https://elearningdz.com/",
+          "/assets/img/projects/elearningdz-cover.svg",
+          "Visuel du projet eLearning DZ avec des livres et une illustration de recherche"
+        ]
+      ],
+      "visit": "Visiter le site"
     },
     "contact": {
       "label": "05 · Contact",
@@ -187,9 +201,9 @@
     "nav": ["Web", "Automation", "Clinic system", "Work", "Contact"],
     "hero": {
       "tag": "CLINICS",
-      "chip": "Management system for doctors in M'Sila",
+      "chip": "Management system for doctors",
       "h1": "Websites and systems, built to fit your business.",
-      "sub": "DexLab designs and builds websites, order pages, admin panels and custom management tools, from M'Sila, for businesses that want less paperwork and more clarity.",
+      "sub": "DexLab designs and builds websites, order pages, admin panels and custom management tools, for businesses that want less paperwork and more clarity.",
       "cta2": "See the work",
       "replay": "Assemble again"
     },
@@ -238,12 +252,26 @@
     "work": {
       "label": "04 · Selected work",
       "h2": "Recent projects",
-      "note": "Projects built for shops and brands in Algeria.",
+      "note": "Two projects, two different worlds. Explore the live websites.",
       "cards": [
-        ["Skee Block", "Website · Booking · Admin", "A barbershop website with online booking and a private area for the owner."],
-        ["Nexora", "Order page", "Product page and order form for an online shop."],
-        ["HEALERS", "Website · Offers", "Website and offers for a wellness brand built around a magnesium oil."]
-      ]
+        [
+          "3kee.site",
+          "Barbershop · Website · Booking",
+          "A distinctive barbershop website with online booking and a private management area.",
+          "https://3kee.site/",
+          "/assets/img/projects/3kee-cover.svg",
+          "3kee project cover featuring the original barber portrait"
+        ],
+        [
+          "eLearning DZ",
+          "Education · Search · Student tools",
+          "An educational resource platform for Algeria, with exam search, grade calculators and university guidance.",
+          "https://elearningdz.com/",
+          "/assets/img/projects/elearningdz-cover.svg",
+          "eLearning DZ project cover with books and a search illustration"
+        ]
+      ],
+      "visit": "Visit website"
     },
     "contact": {
       "label": "05 · Contact",
@@ -361,9 +389,9 @@
     "nav": ["تطوير المواقع", "الأتمتة", "نظام العيادات", "الأعمال", "تواصل"],
     "hero": {
       "tag": "عيادات",
-      "chip": "نظام تسيير العيادات لأطباء المسيلة",
+      "chip": "نظام تسيير العيادات للأطباء",
       "h1": "مواقع وأنظمة مبنية على مقاس عملك.",
-      "sub": "يصمّم DexLab ويطوّر المواقع وصفحات الطلبات ولوحات التحكم وأدوات التسيير المخصّصة، من المسيلة، لأصحاب الأعمال الذين يريدون ورقًا أقل ووضوحًا أكثر.",
+      "sub": "يصمّم DexLab ويطوّر المواقع وصفحات الطلبات ولوحات التحكم وأدوات التسيير المخصّصة، لأصحاب الأعمال الذين يريدون ورقًا أقل ووضوحًا أكثر.",
       "cta2": "شاهد الأعمال",
       "replay": "أعِد التركيب"
     },
@@ -412,12 +440,26 @@
     "work": {
       "label": "04 · أعمال مختارة",
       "h2": "مشاريع حديثة",
-      "note": "مشاريع بُنيت لمحلات وعلامات تجارية في الجزائر.",
+      "note": "مشروعان، وتجربتان مختلفتان. اكتشف الموقعين مباشرة.",
       "cards": [
-        ["Skee Block", "موقع · حجز · لوحة تحكم", "موقع صالون حلاقة مع حجز عبر الإنترنت ومساحة خاصة لصاحب المحل."],
-        ["Nexora", "صفحة طلبات", "صفحة منتج واستمارة طلب لمتجر إلكتروني."],
-        ["HEALERS", "موقع تعريفي · عروض", "موقع وعروض لعلامة عناية وصحة حول زيت المغنيسيوم."]
-      ]
+        [
+          "3kee.site",
+          "حلاقة · موقع · حجز",
+          "موقع لصالون حلاقة بهوية مميّزة، مع حجز عبر الإنترنت ومساحة خاصة للتسيير.",
+          "https://3kee.site/",
+          "/assets/img/projects/3kee-cover.svg",
+          "غلاف مشروع 3kee مع الصورة الأصلية للحلّاق"
+        ],
+        [
+          "eLearning DZ",
+          "تعليم · بحث · أدوات للطلاب",
+          "منصّة موارد تعليمية في الجزائر، للبحث عن الامتحانات وحساب المعدلات والتوجيه الجامعي.",
+          "https://elearningdz.com/",
+          "/assets/img/projects/elearningdz-cover.svg",
+          "غلاف مشروع eLearning DZ مع كتب ورسم توضيحي للبحث"
+        ]
+      ],
+      "visit": "زيارة الموقع"
     },
     "contact": {
       "label": "05 · تواصل",
