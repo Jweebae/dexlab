@@ -137,6 +137,26 @@
   /* Contact form: compose an email (no server needed on GitHub Pages) */
   var form = $("form.cform");
   if (form) {
+    /* Service cards keep the visitor's intent when they reach the inquiry. */
+    $$("a[data-project]").forEach(function (a) {
+      a.addEventListener("click", function () {
+        var choice = $$("input[name=type]", form).find(function (input) {
+          return input.value === a.dataset.project;
+        });
+        if (!choice) return;
+        choice.checked = true;
+        var feedback = $(".project-feedback", form);
+        if (feedback) feedback.textContent = feedback.dataset.label + " " + choice.parentNode.textContent.trim();
+        var nameField = $("#f-name", form);
+        if (nameField) nameField.focus({ preventScroll: true });
+      });
+    });
+    $$("input[name=type]", form).forEach(function (input) {
+      input.addEventListener("change", function () {
+        var feedback = $(".project-feedback", form);
+        if (feedback) feedback.textContent = feedback.dataset.label + " " + input.parentNode.textContent.trim();
+      });
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var name = $("#f-name").value.trim(), reach = $("#f-reach").value.trim(), msg = $("#f-msg").value.trim();

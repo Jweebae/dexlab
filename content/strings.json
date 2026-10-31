@@ -86,7 +86,92 @@
       "ok": "Votre application e-mail s'ouvre avec le message prêt. Il ne reste qu'à l'envoyer.",
       "subject": "Nouveau projet"
     },
-    "foot": { "tag": "Sites et systèmes sur mesure, depuis M'Sila, Algérie.", "top": "Haut de page" }
+    "foot": { "tag": "Sites et systèmes sur mesure, depuis M'Sila, Algérie.", "top": "Haut de page" },
+    "starter": {
+      "label": "À la mesure de votre activité",
+      "h2": "Que souhaitez-vous construire ?",
+      "intro": "Choisissez un point de départ. Nous préciserons la suite ensemble.",
+      "action": "Parler de ce projet",
+      "selected": "Type de projet sélectionné :",
+      "cards": [
+        [
+          "web",
+          "Une présence qui travaille pour vous",
+          "Présentez votre activité, lancez une offre ou recevez des commandes en ligne.",
+          "Sites vitrines · Pages de campagne · Commandes"
+        ],
+        [
+          "automation",
+          "Un travail mieux organisé",
+          "Réunissez les tâches, les commandes et les relances au même endroit.",
+          "Flux de travail · Outils de gestion · Administration"
+        ],
+        [
+          "clinic",
+          "Un cabinet mieux organisé",
+          "Reliez le rendez-vous, le dossier patient et la consultation.",
+          "Patients · Rendez-vous · Ordonnances"
+        ]
+      ]
+    },
+    "process": {
+      "label": "Notre méthode",
+      "h2": "De votre idée à un outil concret.",
+      "intro": "Un parcours clair, avec des détails que nous précisons ensemble.",
+      "steps": [
+        [
+          "Comprendre",
+          "Partir de votre activité, de vos utilisateurs et du problème à résoudre."
+        ],
+        [
+          "Définir",
+          "Préciser le périmètre, les écrans essentiels et les priorités avant le développement."
+        ],
+        [
+          "Construire et affiner",
+          "Transformer la maquette en site ou en outil fonctionnel, puis le revoir ensemble."
+        ],
+        [
+          "Préparer le lancement",
+          "Vérifier les parcours essentiels et préparer la prise en main et la mise en ligne."
+        ]
+      ]
+    },
+    "faq": {
+      "label": "Quelques réponses utiles",
+      "h2": "Avant de commencer.",
+      "items": [
+        [
+          "Je n’ai qu’une idée. Peut-on commencer ainsi ?",
+          "Oui. Expliquez à qui vous vous adressez et ce que vous souhaitez simplifier. Un cahier des charges technique n’est pas nécessaire pour commencer à échanger."
+        ],
+        [
+          "Combien coûtera mon projet ?",
+          "Le périmètre vient d’abord : pages, fonctionnalités, contenu et intégrations. Décrivez votre besoin pour discuter d’un devis adapté à votre projet."
+        ],
+        [
+          "Pouvez-vous améliorer un site existant ?",
+          "Envoyez son lien et précisez ce que vous souhaitez changer. Nous pourrons examiner l’existant et discuter des améliorations adaptées."
+        ],
+        [
+          "Mon site peut-il être multilingue ?",
+          "Oui. Nous pouvons prévoir des versions arabe, française et anglaise, avec une mise en page de droite à gauche pour l’arabe. Les langues et les contenus sont définis pour chaque projet."
+        ],
+        [
+          "Comment découvrir le logiciel cabinet ?",
+          "Choisissez « Logiciel cabinet » dans le formulaire de contact pour demander une démonstration. L’aperçu ci-dessus est illustratif ; l’application est décrite en français et en anglais."
+        ]
+      ]
+    },
+    "social": {
+      "label": "Autour du studio",
+      "h2": "Gardons le contact.",
+      "intro": "Retrouvez DexLab sur Instagram et Facebook. Suivez le studio ou contactez-nous sur le réseau que vous préférez.",
+      "action": "Voir le profil",
+      "newTab": "s’ouvre dans un nouvel onglet",
+      "short": "Sur les réseaux"
+    },
+    "emailHint": "Ce formulaire prépare un e-mail dans votre application de messagerie. Vous l’envoyez ensuite depuis celle-ci."
   },
   "en": {
     "meta": {
@@ -175,7 +260,92 @@
       "ok": "Your email app is opening with the message ready. Just press send.",
       "subject": "New project"
     },
-    "foot": { "tag": "Websites and custom systems from M'Sila, Algeria.", "top": "Back to top" }
+    "foot": { "tag": "Websites and custom systems from M'Sila, Algeria.", "top": "Back to top" },
+    "starter": {
+      "label": "Built around your business",
+      "h2": "What would you like to build?",
+      "intro": "Choose a starting point. We’ll help define the rest.",
+      "action": "Discuss this project",
+      "selected": "Project type selected:",
+      "cards": [
+        [
+          "web",
+          "A presence that works for you",
+          "Introduce your business, launch an offer or take orders online.",
+          "Websites · Landing pages · Order pages"
+        ],
+        [
+          "automation",
+          "A clearer way to work",
+          "Bring scattered tasks, orders and follow-ups into one place.",
+          "Workflows · Management tools · Admin panels"
+        ],
+        [
+          "clinic",
+          "A more organized clinic",
+          "Connect the appointment, the patient file and the consultation.",
+          "Patients · Appointments · Prescriptions"
+        ]
+      ]
+    },
+    "process": {
+      "label": "How we work",
+      "h2": "From your idea to a working tool.",
+      "intro": "A clear path, with room to shape the details together.",
+      "steps": [
+        [
+          "Understand",
+          "Start with your business, your users and the problem you want to solve."
+        ],
+        [
+          "Define",
+          "Agree on the scope, key screens and priorities before development."
+        ],
+        [
+          "Build & refine",
+          "Turn the design into a working website or system and review it together."
+        ],
+        [
+          "Prepare to launch",
+          "Check the main journeys and prepare the handover and launch."
+        ]
+      ]
+    },
+    "faq": {
+      "label": "A few useful answers",
+      "h2": "Before we start.",
+      "items": [
+        [
+          "I only have an idea. Can we start there?",
+          "Yes. Tell us who you want to reach and what you want to make easier. You do not need a technical specification to start a conversation."
+        ],
+        [
+          "How much will my project cost?",
+          "The scope comes first: pages, features, content and integrations. Share what you need so we can discuss a quote for your project."
+        ],
+        [
+          "Can you improve an existing website?",
+          "Share its link and explain what you want to change. We can review the current setup and discuss suitable improvements."
+        ],
+        [
+          "Can my website use more than one language?",
+          "Yes. We can plan Arabic, French and English versions, including a right-to-left Arabic layout. The languages and content are agreed for each project."
+        ],
+        [
+          "How can I explore the clinic system?",
+          "Choose “Clinic system” in the contact form to request a demonstration. The preview above is illustrative; the application is described in French and English."
+        ]
+      ]
+    },
+    "social": {
+      "label": "Around the studio",
+      "h2": "Stay connected with DexLab.",
+      "intro": "Find the studio on Instagram and Facebook. Follow along or get in touch through the channel you prefer.",
+      "action": "Visit profile",
+      "newTab": "opens in a new tab",
+      "short": "Find us online"
+    },
+    "emailHint": "This form prepares an email in your email app. You send it from there."
   },
   "ar": {
     "meta": {
@@ -264,7 +434,92 @@
       "ok": "يُفتح تطبيق البريد والرسالة جاهزة. ما عليك إلا الضغط على إرسال.",
       "subject": "مشروع جديد"
     },
-    "foot": { "tag": "مواقع وأنظمة مخصّصة من المسيلة، الجزائر.", "top": "العودة للأعلى" }
+    "foot": { "tag": "مواقع وأنظمة مخصّصة من المسيلة، الجزائر.", "top": "العودة للأعلى" },
+    "starter": {
+      "label": "على مقاس نشاطك",
+      "h2": "ما الذي تريد بناءه؟",
+      "intro": "اختر نقطة البداية، ونحدّد بقية التفاصيل معًا.",
+      "action": "ناقش هذا المشروع",
+      "selected": "نوع المشروع المختار:",
+      "cards": [
+        [
+          "web",
+          "حضور رقمي يخدم نشاطك",
+          "عرّف بنشاطك، أطلق عرضًا أو استقبل الطلبات عبر الإنترنت.",
+          "مواقع تعريفية · صفحات هبوط · طلبات"
+        ],
+        [
+          "automation",
+          "طريقة أوضح للعمل",
+          "اجمع المهام والطلبات والمتابعات المتفرّقة في مكان واحد.",
+          "مسارات عمل · أدوات تسيير · لوحات تحكم"
+        ],
+        [
+          "clinic",
+          "عيادة أكثر تنظيمًا",
+          "اربط الموعد بملف المريض والفحص.",
+          "مرضى · مواعيد · وصفات"
+        ]
+      ]
+    },
+    "process": {
+      "label": "كيف نعمل",
+      "h2": "من فكرتك إلى أداة عملية.",
+      "intro": "خطوات واضحة، وتفاصيل نحدّدها معًا.",
+      "steps": [
+        [
+          "نفهم",
+          "نبدأ بنشاطك ومستخدميك والمشكلة التي تريد حلّها."
+        ],
+        [
+          "نحدّد",
+          "نتّفق على نطاق المشروع والشاشات الأساسية والأولويات قبل التطوير."
+        ],
+        [
+          "نبني ونحسّن",
+          "نحوّل التصميم إلى موقع أو نظام يعمل، ثم نراجعه معًا."
+        ],
+        [
+          "نحضّر للإطلاق",
+          "نتحقّق من المسارات الأساسية ونحضّر للتسليم والإطلاق."
+        ]
+      ]
+    },
+    "faq": {
+      "label": "إجابات مفيدة",
+      "h2": "قبل أن نبدأ.",
+      "items": [
+        [
+          "لديّ فكرة فقط، هل يمكننا البدء بها؟",
+          "نعم. أخبرنا بمن تريد الوصول إليه وما الذي تريد تبسيطه. لا تحتاج إلى دفتر شروط تقني لبدء النقاش."
+        ],
+        [
+          "كم سيكلّف مشروعي؟",
+          "نحدّد النطاق أولًا: الصفحات والوظائف والمحتوى والتكاملات. صِف ما تحتاجه لنناقش عرض سعر يناسب مشروعك."
+        ],
+        [
+          "هل يمكنكم تحسين موقع موجود؟",
+          "أرسل الرابط واشرح ما تريد تغييره. يمكننا مراجعة الموقع الحالي ومناقشة التحسينات المناسبة."
+        ],
+        [
+          "هل يمكن أن يكون موقعي بعدّة لغات؟",
+          "نعم. يمكننا التخطيط لنسخ عربية وفرنسية وإنجليزية، مع تصميم من اليمين إلى اليسار للعربية. نتّفق على اللغات والمحتوى لكل مشروع."
+        ],
+        [
+          "كيف أكتشف نظام العيادات؟",
+          "اختر «نظام العيادات» في استمارة التواصل لطلب عرض تجريبي. المعاينة أعلاه توضيحية، وواجهة التطبيق موصوفة بالفرنسية والإنجليزية."
+        ]
+      ]
+    },
+    "social": {
+      "label": "حول الاستوديو",
+      "h2": "ابقَ على تواصل مع DexLab.",
+      "intro": "تجدنا على إنستغرام وفيسبوك. تابع الاستوديو أو تواصل معنا عبر المنصّة التي تفضّلها.",
+      "action": "زيارة الصفحة",
+      "newTab": "يفتح في علامة تبويب جديدة",
+      "short": "تابعنا على"
+    },
+    "emailHint": "تُحضّر هذه الاستمارة رسالة في تطبيق البريد لديك، ثم ترسلها من هناك."
   },
   "app": {
     "clinicName": "Cabinet [Nom du cabinet]",
@@ -283,6 +538,18 @@
   "site": {
     "email": "contact@dexlab.store",
     "url": "https://dexlab.store",
-    "whatsapp": ""
+    "whatsapp": "",
+    "socials": [
+      {
+        "name": "Instagram",
+        "handle": "@dexlab.studio",
+        "url": "https://www.instagram.com/dexlab.studio/"
+      },
+      {
+        "name": "Facebook",
+        "handle": "Dexlab Studio",
+        "url": "https://web.facebook.com/people/Dexlab-Studio/61596110937844/"
+      }
+    ]
   }
 }

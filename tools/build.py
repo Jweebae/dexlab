@@ -57,6 +57,30 @@ def page(lang):
     alts = "\n".join(f'<link rel="alternate" hreflang="{c}" href="{SITE["url"]}/{c}/">' for c, *_ in LANGS)
     email = SITE["email"]
 
+    starter_cards = "".join(
+        f'<a class="starter-card rv" href="#contact" data-project="{e(c[0])}" style="--i:{n}">'
+        f'<span class="starter-top"><span class="num">0{n + 1}</span>{icon(["web", "admin", "cal"][n], 28)}</span>'
+        f'<h3>{e(c[1])}</h3><p>{e(c[2])}</p><span class="starter-tags">{e(c[3])}</span>'
+        f'<span class="starter-action">{e(t["starter"]["action"])}{ARROW}</span></a>'
+        for n, c in enumerate(t["starter"]["cards"]))
+    process_steps = "".join(
+        f'<li class="process-step rv" style="--i:{n}"><span class="step-number">0{n + 1}</span>'
+        f'<h3>{e(step[0])}</h3><p>{e(step[1])}</p></li>'
+        for n, step in enumerate(t["process"]["steps"]))
+    faq_items = "".join(
+        f'<details class="faq-item"><summary>{e(q)}<span class="faq-mark" aria-hidden="true"></span></summary>'
+        f'<p>{e(a)}</p></details>' for q, a in t["faq"]["items"])
+    social_cards = "".join(
+        f'<a class="social-card" href="{e(s["url"])}" target="_blank" rel="noopener noreferrer" '
+        f'aria-label="{e(s["name"])} — {e(t["social"]["newTab"])}">'
+        f'<span class="social-card-top"><span class="label" lang="en">{e(s["name"])}</span><span aria-hidden="true">↗</span></span>'
+        f'<b dir="ltr" class="ltr">{e(s["handle"])}</b><span class="social-action">{e(t["social"]["action"])}</span></a>'
+        for s in SITE["socials"])
+    social_links = "".join(
+        f'<a href="{e(s["url"])}" target="_blank" rel="noopener noreferrer" '
+        f'aria-label="{e(s["name"])} — {e(t["social"]["newTab"])}"><bdi lang="en">{e(s["name"])}</bdi><span aria-hidden="true"> ↗</span></a>'
+        for s in SITE["socials"])
+
     web_cards = "".join(
         f'<article class="card rv" style="--i:{n}"><span class="num">0{n + 1}</span>{icon(c[2])}'
         f'<h3>{e(c[0])}</h3><p>{e(c[1])}</p></article>' for n, c in enumerate(t["web"]["cards"]))
@@ -161,6 +185,13 @@ def page(lang):
 </button>
 </section>
 
+<section class="starter" aria-labelledby="starter-heading">
+<div class="wrap sec-in">
+<div class="starter-heading"><div><span class="label">{e(t["starter"]["label"])}</span><h2 id="starter-heading">{e(t["starter"]["h2"])}</h2></div><p>{e(t["starter"]["intro"])}</p></div>
+<div class="starter-grid">{starter_cards}</div>
+</div>
+</section>
+
 <section class="sec" id="web">
 <div class="wrap sec-in">
 <div class="sec-head rv"><div><span class="label">{e(t["web"]["label"])}</span><h2 class="h2">{e(t["web"]["h2"])}</h2></div><p class="lead">{e(t["web"]["intro"])}</p></div>
@@ -186,7 +217,7 @@ def page(lang):
 <h2 class="h2 rv">{e(t["clinic"]["h2"])}</h2>
 <p class="lead rv">{e(t["clinic"]["intro"])}</p>
 <ul class="mods">{mods}</ul>
-<div class="actions"><a class="btn btn-pri" href="#contact">{e(t["clinic"]["cta"])}{ARROW}</a></div>
+<div class="actions"><a class="btn btn-pri" href="#contact" data-project="clinic">{e(t["clinic"]["cta"])}{ARROW}</a></div>
 </div>
 <figure class="rv">
 <div class="screen-wrap" dir="ltr" tabindex="0" role="region" aria-label="{e(t["clinic"]["figLabel"])}">
@@ -212,6 +243,27 @@ def page(lang):
 </div>
 </section>
 
+<section class="sec process" id="process" aria-labelledby="process-heading">
+<div class="wrap sec-in">
+<div class="sec-head rv"><div><span class="label">{e(t["process"]["label"])}</span><h2 class="h2" id="process-heading">{e(t["process"]["h2"])}</h2></div><p class="lead">{e(t["process"]["intro"])}</p></div>
+<ol class="process-grid">{process_steps}</ol>
+</div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="faq-heading">
+<div class="wrap faq-grid">
+<div class="faq-heading"><span class="label">{e(t["faq"]["label"])}</span><h2 class="h2" id="faq-heading">{e(t["faq"]["h2"])}</h2><a class="btn btn-sec" href="#contact">{e(t["cta"])}{ARROW}</a></div>
+<div class="faq-list">{faq_items}</div>
+</div>
+</section>
+
+<section class="social-band" id="social" aria-labelledby="social-heading">
+<div class="wrap social-layout">
+<div class="social-copy"><span class="label">{e(t["social"]["label"])}</span><h2 class="h2" id="social-heading">{e(t["social"]["h2"])}</h2><p>{e(t["social"]["intro"])}</p></div>
+<div class="social-cards">{social_cards}</div>
+</div>
+</section>
+
 <section class="sec contact" id="contact">
 <div class="wrap sec-in">
 <div class="contact-copy">
@@ -220,8 +272,10 @@ def page(lang):
 <p class="lead">{e(t["contact"]["intro"])}</p>
 <div class="mini" aria-hidden="true"><span class="b"></span><span class="d"></span></div>
 <dl><div><dt>{e(t["contact"]["emailK"])}</dt><dd><a href="mailto:{email}"><bdi dir="ltr" class="ltr">{email}</bdi></a></dd></div></dl>
+<div class="contact-social"><span class="label">{e(t["social"]["short"])}</span><div class="social-links">{social_links}</div></div>
 </div>
 <form class="cform rv" novalidate data-to="{email}" data-subject="{e(t["contact"]["subject"])}">
+<p class="project-feedback" role="status" aria-live="polite" data-label="{e(t["starter"]["selected"])}"></p>
 <div class="field"><label for="f-name">{e(t["contact"]["name"])}</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
 <div class="field"><label for="f-reach">{e(t["contact"]["reach"])}</label><input id="f-reach" name="reach" type="text" class="ltr" dir="ltr" autocomplete="email" inputmode="email"></div>
 <fieldset class="field" style="border:0;margin:0;padding:0"><legend class="lbl" style="padding:0;margin-bottom:8px">{e(t["contact"]["type"])}</legend><div class="chips">{chips}</div></fieldset>
@@ -229,6 +283,7 @@ def page(lang):
 <div class="msg err" role="alert" hidden>{e(t["contact"]["required"])}</div>
 <div class="msg ok" role="status" hidden>{CHECK}<span>{e(t["contact"]["ok"])}</span></div>
 <button type="submit" class="btn btn-pri">{e(t["contact"]["send"])}{ARROW}</button>
+<p class="form-note">{e(t["emailHint"])}</p>
 </form>
 </div>
 </section>
@@ -236,7 +291,7 @@ def page(lang):
 
 <footer class="foot">
 <div class="wrap foot-grid">
-<div><span dir="ltr"><img src="/assets/img/logo-dark.svg" alt="DexLab" width="140" height="27"></span><span class="tag">{e(t["foot"]["tag"])}</span></div>
+<div><span dir="ltr"><img src="/assets/img/logo-dark.svg" alt="DexLab" width="140" height="27"></span><span class="tag">{e(t["foot"]["tag"])}</span><div class="social-links">{social_links}</div></div>
 <nav aria-label="{e(t["navLabel"])}"><div>{nav.replace('<a ', '<a class="f" ')}</div></nav>
 <div><span class="k">{e(t["langLabel"])}</span>{"".join(lang_links(lang))}</div>
 <div><span class="k">{e(t["contact"]["emailK"])}</span><a href="mailto:{email}"><bdi dir="ltr" class="ltr">{email}</bdi></a><a href="{SITE["url"]}" dir="ltr" class="ltr">dexlab.store</a></div>
