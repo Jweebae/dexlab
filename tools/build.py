@@ -306,7 +306,7 @@ def page(lang):
 <div><span class="k">{e(t["langLabel"])}</span>{"".join(lang_links(lang))}</div>
 <div><span class="k">{e(t["contact"]["emailK"])}</span><a href="mailto:{email}"><bdi dir="ltr" class="ltr">{email}</bdi></a><a href="{SITE["url"]}" dir="ltr" class="ltr">dexlab.store</a></div>
 </div>
-<div class="wrap foot-bottom"><span dir="ltr" class="ltr">© <span data-year>2026</span> DexLab · M’Sila</span><a href="#top">{e(t["foot"]["top"])} ↑</a></div>
+<div class="wrap foot-bottom"><span dir="ltr" class="ltr">© <span data-year>2026</span> DexLab · M’Sila</span><img class="creator-signature" src="{asset_url('/assets/img/signature.png')}" alt="Developer signature" width="48" height="24" loading="lazy" decoding="async"><a href="#top">{e(t["foot"]["top"])} ↑</a></div>
 </footer>
 <script src="{asset_url('/assets/js/site.js')}" defer></script>
 </body>

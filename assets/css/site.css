@@ -429,3 +429,6 @@ section[id]{scroll-margin-block-start:calc(var(--nav-h) + 16px)}
   .project-link:hover .project-cover img{transform:none}
 }
 [hidden]{display:none!important}
+
+/* Tiny transparent creator signature, white on the dark footer. */
+.foot .creator-signature{display:block;width:48px;height:24px;object-fit:contain;filter:invert(1);opacity:.7;flex:none;align-self:center}
